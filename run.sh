@@ -15,7 +15,7 @@ if test -f "kustomization.yaml"; then
 
   echo "Fetching Policy..."
 
-  git clone --quiet --depth 1 --branch ${POLICY_VERSION} https://github.com/example-policy-org/policy.git /policy
+  git clone --quiet --depth 1 --branch ${POLICY_VERSION} https://github.com/example-policy-org-demo/policy.git /policy
 
   echo "Policy fetched."
   echo "Running policy checker..."
@@ -38,7 +38,7 @@ if compgen -G "./*.tf" > /dev/null; then
   echo "Policy version: ${POLICY_VERSION}"
 
   echo "Fetching Policy..."
-  git clone --quiet --depth 1 --branch ${POLICY_VERSION} https://github.com/example-policy-org/policy.git /policy
+  git clone --quiet --depth 1 --branch ${POLICY_VERSION} https://github.com/example-policy-org-demo/policy.git /policy
 
   echo "Policy fetched."
 
